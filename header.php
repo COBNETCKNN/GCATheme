@@ -38,7 +38,7 @@
         </div>
     </div>
     <!-- Menu items -->
-    <div class="menuItems py-3 bg-red text-white text-lg font-inter">
+    <div class="menuItems py-3 bg-red text-white text-lg font-inter font-light">
         <div class="container mx-auto">
             <?php 
                 wp_nav_menu(
