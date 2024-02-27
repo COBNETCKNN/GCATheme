@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../assets/fonts/Inter-VariableFont_slnt\,wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'halveticaLight';
+    src: url('../assets/fonts/HelveticaNeueLight.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'halveticaBold';
+    src: url('../assets/fonts/HelveticaNeueBold.otf') format('truetype');
+}
+
+#menu-header-menu {
+    display: flex;
+    justify-content: end;
+
+    li {
+        margin-left: 2.5rem;
+    }
+}
