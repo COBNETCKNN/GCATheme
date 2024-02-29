@@ -17,6 +17,11 @@
     src: url('../assets/fonts/HelveticaNeueBold.otf') format('truetype');
 }
 
+@font-face {
+    font-family: 'halveticaMedium';
+    src: url('../assets/fonts/HelveticaNeueMedium.otf') format('truetype');
+}
+
 #menu-header-menu {
     display: flex;
     justify-content: end;
@@ -79,7 +84,8 @@
     font-size: 20px;
 }
 
-.sectionHeading {
+.sectionHeading,
+.faq_heading {
     font-size: 60px;
     line-height: 72.61px;
 }
@@ -241,6 +247,43 @@
     text-align: center;
 }
 
-.news_title {
+//FAQ Accordion
+.containerwidth {
+    width: 100%;
+}
 
+.wrapper {
+    padding: 10px 50px;
+    margin-bottom: 20px;
+}
+
+.toggle {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+    color: black;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    min-height: 105px;
+}
+/* Modify the CSS for the accordion content */
+.content {
+    width: 100%;
+    position: relative;
+    font-size: 14px;
+    text-align: justify;
+    line-height: 30px;
+    height: 0;
+    overflow: hidden;
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+}
+
+/* Style for each FAQ item */
+.faq-item {
+    margin-bottom: 20px; /* Adjust spacing between FAQ items */
 }

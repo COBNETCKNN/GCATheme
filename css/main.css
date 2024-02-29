@@ -551,6 +551,9 @@ video {
   margin-top: auto;
   margin-bottom: auto;
 }
+.mb-14 {
+  margin-bottom: 3.5rem;
+}
 .mb-2 {
   margin-bottom: 0.5rem;
 }
@@ -620,6 +623,9 @@ video {
 .w-full {
   width: 100%;
 }
+.w-\[80\%\] {
+  width: 80%;
+}
 .max-w-\[1240px\] {
   max-width: 1240px;
 }
@@ -668,6 +674,12 @@ video {
 .gap-6 {
   gap: 1.5rem;
 }
+.gap-7 {
+  gap: 1.75rem;
+}
+.gap-5 {
+  gap: 1.25rem;
+}
 .rounded {
   border-radius: 0.25rem;
 }
@@ -692,6 +704,10 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(65 64 89 / var(--tw-bg-opacity));
 }
+.bg-gray {
+  --tw-bg-opacity: 1;
+  background-color: rgb(242 242 242 / var(--tw-bg-opacity));
+}
 .bg-red {
   --tw-bg-opacity: 1;
   background-color: rgb(217 59 88 / var(--tw-bg-opacity));
@@ -699,6 +715,13 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+.bg-darkGray {
+  --tw-bg-opacity: 1;
+  background-color: rgb(217 217 217 / var(--tw-bg-opacity));
+}
+.p-3 {
+  padding: 0.75rem;
 }
 .px-10 {
   padding-left: 2.5rem;
@@ -716,6 +739,10 @@ video {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
 }
+.px-7 {
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+}
 .py-10 {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
@@ -727,6 +754,10 @@ video {
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+}
+.py-20 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 .py-3 {
   padding-top: 0.75rem;
@@ -744,6 +775,10 @@ video {
   padding-top: 1.75rem;
   padding-bottom: 1.75rem;
 }
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
 .pb-10 {
   padding-bottom: 2.5rem;
 }
@@ -756,11 +791,17 @@ video {
 .text-center {
   text-align: center;
 }
+.text-start {
+  text-align: start;
+}
 .font-halveticaBold {
   font-family: halveticaBold, sans-serif;
 }
 .font-halveticaLight {
   font-family: halveticaLight, sans-serif;
+}
+.font-halveticaMedium {
+  font-family: halveticaMedium, sans-serif;
 }
 .font-inter {
   font-family: Inter, sans-serif;
@@ -769,13 +810,13 @@ video {
   font-size: 1.5rem;
   line-height: 2rem;
 }
-.text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-}
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
+}
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 .font-bold {
   font-weight: 700;
@@ -786,14 +827,14 @@ video {
 .font-light {
   font-weight: 300;
 }
+.font-medium {
+  font-weight: 500;
+}
 .font-normal {
   font-weight: 400;
 }
 .font-semibold {
   font-weight: 600;
-}
-.italic {
-  font-style: italic;
 }
 .text-black {
   --tw-text-opacity: 1;
@@ -814,6 +855,10 @@ video {
 @font-face {
   font-family: "halveticaBold";
   src: url("../assets/fonts/HelveticaNeueBold.otf") format("truetype");
+}
+@font-face {
+  font-family: "halveticaMedium";
+  src: url("../assets/fonts/HelveticaNeueMedium.otf") format("truetype");
 }
 #menu-header-menu {
   display: flex;
@@ -876,7 +921,8 @@ video {
   font-size: 20px;
 }
 
-.sectionHeading {
+.sectionHeading,
+.faq_heading {
   font-size: 60px;
   line-height: 72.61px;
 }
@@ -1028,6 +1074,42 @@ video {
   text-align: center;
 }
 
+.containerwidth {
+  width: 100%;
+}
+
+.wrapper {
+  padding: 10px 50px;
+  margin-bottom: 20px;
+}
+
+.toggle {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  color: black;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  min-height: 105px;
+}
+
+/* Modify the CSS for the accordion content */
+.content {
+  width: 100%;
+  position: relative;
+  font-size: 14px;
+  text-align: justify;
+  line-height: 30px;
+  height: 0;
+  overflow: hidden;
+  transition: all 1s;
+}
+
+/* Style for each FAQ item */
+.faq-item {
+  margin-bottom: 20px; /* Adjust spacing between FAQ items */
+}
 .hover\:bg-blue-700:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(29 78 216 / var(--tw-bg-opacity));
