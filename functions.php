@@ -19,6 +19,7 @@ add_image_size('services-thumbnail', 420, 260, true);
 add_image_size('aboutus-thumbnail', 610, 465, true);
 add_image_size('services-featured', 870, 460, true);
 add_image_size('services-type', 610, 300, true);
+add_image_size('services-single-thumb', 1240, 650, true);
 
 // Registrating Menus
 require_once('partials/menu-registration.php');

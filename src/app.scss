@@ -77,7 +77,9 @@
 
 .heroHeading,
 .news_heading,
-.servicesContent_heading {
+.servicesContent_heading,
+.specialist_heading,
+.singleBenefits_heading {
     font-size: 50px;
 }
 
@@ -87,12 +89,14 @@
 
 .sectionHeading,
 .faq_heading,
-.servicesWhatWeDo_heading {
+.servicesWhatWeDo_heading,
+.singleService_heading {
     font-size: 60px;
     line-height: 72.61px;
 }
 
-.sectionSubheading {
+.sectionSubheading,
+.benefitsRepeater_description {
     line-height: 21.78px;
 }
 
@@ -304,4 +308,82 @@
 .services_servicesCard {
     background-size: cover;
     border-radius: 20px;
+}
+
+.singleService_hero__wrapper {
+    background-image: url('../assets/images/gcatheme_aboutus__background.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.singleService_hero__wrapper::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(65, 64, 89, 0.9);
+}
+
+.singleService_heading {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin-top: 7%;
+}
+
+.singleService_thumb__wrapper img {
+    margin-top: -12%;
+    z-index: 20;
+    border-radius: 20px;
+}
+
+.contactCard_links:hover {
+    text-decoration: underline;
+}
+
+.singelService_contact__form {
+    background-color: #414059;
+    max-width: 736px;
+    padding: 30px;
+    border-radius: 20px;
+    
+    label {
+        color: white;
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    p {
+        color: white;
+        padding: 8px 0;
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    input,
+    select {
+        width: 100%;
+        border-radius: 10px;
+        margin-top: 10px;
+        color: black;
+        padding: 0 10px;
+        font-weight: 400;
+    }
+
+    textarea {
+        width: 100%;
+        height: 32px;
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+
+    .wpcf7-submit {
+        background-color: #D93B58;
+        padding: 5px 10px;
+    }
+
 }
