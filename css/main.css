@@ -531,11 +531,23 @@ video {
 .bottom-4 {
   bottom: 1rem;
 }
+.bottom-8 {
+  bottom: 2rem;
+}
 .left-5 {
   left: 1.25rem;
 }
+.left-7 {
+  left: 1.75rem;
+}
+.right-10 {
+  right: 2.5rem;
+}
 .right-5 {
   right: 1.25rem;
+}
+.top-10 {
+  top: 2.5rem;
 }
 .col-span-2 {
   grid-column: span 2 / span 2;
@@ -546,6 +558,10 @@ video {
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+}
+.my-14 {
+  margin-top: 3.5rem;
+  margin-bottom: 3.5rem;
 }
 .my-auto {
   margin-top: auto;
@@ -578,6 +594,9 @@ video {
 .ml-3 {
   margin-left: 0.75rem;
 }
+.mr-3 {
+  margin-right: 0.75rem;
+}
 .mt-20 {
   margin-top: 5rem;
 }
@@ -596,6 +615,9 @@ video {
 .h-\[255px\] {
   height: 255px;
 }
+.h-\[300px\] {
+  height: 300px;
+}
 .h-\[600px\] {
   height: 600px;
 }
@@ -607,6 +629,9 @@ video {
 }
 .h-full {
   height: 100%;
+}
+.h-screen {
+  height: 100vh;
 }
 .w-\[412px\] {
   width: 412px;
@@ -620,11 +645,14 @@ video {
 .w-\[570px\] {
   width: 570px;
 }
-.w-full {
-  width: 100%;
+.w-\[610px\] {
+  width: 610px;
 }
 .w-\[80\%\] {
   width: 80%;
+}
+.w-full {
+  width: 100%;
 }
 .max-w-\[1240px\] {
   max-width: 1240px;
@@ -671,14 +699,11 @@ video {
 .gap-4 {
   gap: 1rem;
 }
-.gap-6 {
-  gap: 1.5rem;
-}
-.gap-7 {
-  gap: 1.75rem;
-}
 .gap-5 {
   gap: 1.25rem;
+}
+.gap-6 {
+  gap: 1.5rem;
 }
 .rounded {
   border-radius: 0.25rem;
@@ -704,9 +729,9 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(65 64 89 / var(--tw-bg-opacity));
 }
-.bg-gray {
+.bg-darkGray {
   --tw-bg-opacity: 1;
-  background-color: rgb(242 242 242 / var(--tw-bg-opacity));
+  background-color: rgb(217 217 217 / var(--tw-bg-opacity));
 }
 .bg-red {
   --tw-bg-opacity: 1;
@@ -715,10 +740,6 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-.bg-darkGray {
-  --tw-bg-opacity: 1;
-  background-color: rgb(217 217 217 / var(--tw-bg-opacity));
 }
 .p-3 {
   padding: 0.75rem;
@@ -759,6 +780,10 @@ video {
   padding-top: 5rem;
   padding-bottom: 5rem;
 }
+.py-28 {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
@@ -766,6 +791,10 @@ video {
 .py-36 {
   padding-top: 9rem;
   padding-bottom: 9rem;
+}
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
 }
 .py-64 {
   padding-top: 16rem;
@@ -775,10 +804,6 @@ video {
   padding-top: 1.75rem;
   padding-bottom: 1.75rem;
 }
-.py-5 {
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
-}
 .pb-10 {
   padding-bottom: 2.5rem;
 }
@@ -787,6 +812,9 @@ video {
 }
 .pt-10 {
   padding-top: 2.5rem;
+}
+.pt-36 {
+  padding-top: 9rem;
 }
 .text-center {
   text-align: center;
@@ -814,6 +842,10 @@ video {
   font-size: 1.875rem;
   line-height: 2.25rem;
 }
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -835,6 +867,9 @@ video {
 }
 .font-semibold {
   font-weight: 600;
+}
+.leading-5 {
+  line-height: 1.25rem;
 }
 .text-black {
   --tw-text-opacity: 1;
@@ -913,7 +948,8 @@ video {
 }
 
 .heroHeading,
-.news_heading {
+.news_heading,
+.servicesContent_heading {
   font-size: 50px;
 }
 
@@ -922,7 +958,8 @@ video {
 }
 
 .sectionHeading,
-.faq_heading {
+.faq_heading,
+.servicesWhatWeDo_heading {
   font-size: 60px;
   line-height: 72.61px;
 }
@@ -1110,6 +1147,21 @@ video {
 .faq-item {
   margin-bottom: 20px; /* Adjust spacing between FAQ items */
 }
+
+.servicesPage_heading {
+  font-size: 60px;
+  line-height: 72.61px;
+}
+
+.servicesFeatured_wrapper img {
+  border-radius: 20px;
+}
+
+.services_servicesCard {
+  background-size: cover;
+  border-radius: 20px;
+}
+
 .hover\:bg-blue-700:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(29 78 216 / var(--tw-bg-opacity));

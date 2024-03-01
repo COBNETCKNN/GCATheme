@@ -17,6 +17,8 @@ add_theme_support( 'post-thumbnails' );
 add_image_size('logo-size', 130, 45, true);
 add_image_size('services-thumbnail', 420, 260, true);
 add_image_size('aboutus-thumbnail', 610, 465, true);
+add_image_size('services-featured', 870, 460, true);
+add_image_size('services-type', 610, 300, true);
 
 // Registrating Menus
 require_once('partials/menu-registration.php');
@@ -26,7 +28,7 @@ require_once('partials/post-types.php');
 
 // Disabling editor on certain pages
 function remove_pages_editor() {
-    $disabled_pages = array(17);
+    $disabled_pages = array(17, 117);
 
     $current_page_id = get_the_ID();
 

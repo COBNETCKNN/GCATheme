@@ -76,7 +76,8 @@
   }
 
 .heroHeading,
-.news_heading {
+.news_heading,
+.servicesContent_heading {
     font-size: 50px;
 }
 
@@ -85,7 +86,8 @@
 }
 
 .sectionHeading,
-.faq_heading {
+.faq_heading,
+.servicesWhatWeDo_heading {
     font-size: 60px;
     line-height: 72.61px;
 }
@@ -286,4 +288,20 @@
 /* Style for each FAQ item */
 .faq-item {
     margin-bottom: 20px; /* Adjust spacing between FAQ items */
+}
+
+.servicesPage_heading {
+    font-size: 60px;
+    line-height: 72.61px;
+}
+
+.servicesFeatured_wrapper {
+    img {
+        border-radius: 20px;
+    }
+}
+
+.services_servicesCard {
+    background-size: cover;
+    border-radius: 20px;
 }
