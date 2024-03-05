@@ -1,1 +1,31 @@
-for(var toggles=document.getElementsByClassName("toggle"),contentDiv=document.getElementsByClassName("content"),icons=document.getElementsByClassName("icon"),_loop=function(t){toggles[t].addEventListener("click",(function(){parseInt(contentDiv[t].style.height)!=contentDiv[t].scrollHeight?(contentDiv[t].style.height=contentDiv[t].scrollHeight+"px",toggles[t].style.color="#0084e9",icons[t].classList.remove("fa-plus"),icons[t].classList.add("fa-minus")):(contentDiv[t].style.height="0px",toggles[t].style.color="#111130",icons[t].classList.remove("fa-minus"),icons[t].classList.add("fa-plus"));for(var e=0;e<contentDiv.length;e++)e!==t&&(contentDiv[e].style.height=0,toggles[e].style.color="#111130",icons[e].classList.remove("fa-minus"),icons[e].classList.add("fa-plus"))}))},i=0;i<toggles.length;i++)_loop(i);
+//<![CDATA[
+var toggles = document.getElementsByClassName("toggle");
+var contentDiv = document.getElementsByClassName("content");
+var icons = document.getElementsByClassName("icon");
+var _loop = function _loop(i) {
+  toggles[i].addEventListener("click", function () {
+    if (parseInt(contentDiv[i].style.height) != contentDiv[i].scrollHeight) {
+      contentDiv[i].style.height = contentDiv[i].scrollHeight + "px";
+      toggles[i].style.color = "#0084e9";
+      icons[i].classList.remove("fa-plus");
+      icons[i].classList.add("fa-minus");
+    } else {
+      contentDiv[i].style.height = "0px";
+      toggles[i].style.color = "#111130";
+      icons[i].classList.remove("fa-minus");
+      icons[i].classList.add("fa-plus");
+    }
+    for (var j = 0; j < contentDiv.length; j++) {
+      if (j !== i) {
+        contentDiv[j].style.height = 0;
+        toggles[j].style.color = "#111130";
+        icons[j].classList.remove("fa-minus");
+        icons[j].classList.add("fa-plus");
+      }
+    }
+  });
+};
+for (var i = 0; i < toggles.length; i++) {
+  _loop(i);
+}
+//]]>

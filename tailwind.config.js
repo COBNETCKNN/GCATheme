@@ -15,6 +15,7 @@ module.exports = {
     extend: {
       fontFamily: {
         inter: ["Inter", "sans-serif"],
+        halveticaExtraLight: ["halveticaExtraLight", "sans-serif"],
         halveticaLight: ["halveticaLight", "sans-serif"],
         halveticaBold: ["halveticaBold", "sans-serif"],
         halveticaMedium: ["halveticaMedium", "sans-serif"],

@@ -22,6 +22,12 @@
     src: url('../assets/fonts/HelveticaNeueMedium.otf') format('truetype');
 }
 
+@font-face {
+    font-family: 'halveticaExtraLight';
+    src: url('../assets/fonts/HelveticaNeueThin.otf') format('truetype');
+}
+
+
 #menu-header-menu {
     display: flex;
     justify-content: end;
@@ -79,7 +85,8 @@
 .news_heading,
 .servicesContent_heading,
 .specialist_heading,
-.singleBenefits_heading {
+.singleBenefits_heading,
+.contetnImage_heading {
     font-size: 50px;
 }
 
@@ -90,7 +97,8 @@
 .sectionHeading,
 .faq_heading,
 .servicesWhatWeDo_heading,
-.singleService_heading {
+.singleService_heading,
+.aboutUs_page_heading {
     font-size: 60px;
     line-height: 72.61px;
 }
@@ -386,4 +394,50 @@
         padding: 5px 10px;
     }
 
+}
+
+.truestedIndustries_title {
+    font-size: 30px;
+}
+
+// disabling header and footer on coming soon page
+.page-id-166 {
+    header {
+        display: none;
+    }
+    
+    footer {
+        display: none;
+    }
+}
+
+#comingSoon {
+    background-image: url('../assets/images/gcatheme_inclusivity__background.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#comingSoon:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(65, 64, 89, 0.9);
+}
+
+.comingSoon_heading {
+    font-size: 60px;
+}
+
+.aboutUs_hero__upperSection {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contentImage_image__wrapper img {
+    border-radius: 20px;
 }
