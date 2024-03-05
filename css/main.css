@@ -621,6 +621,9 @@ video {
 .h-\[100vh\] {
   height: 100vh;
 }
+.h-\[130px\] {
+  height: 130px;
+}
 .h-\[200px\] {
   height: 200px;
 }
@@ -742,6 +745,9 @@ video {
 .justify-between {
   justify-content: space-between;
 }
+.gap-10 {
+  gap: 2.5rem;
+}
 .gap-14 {
   gap: 3.5rem;
 }
@@ -754,9 +760,6 @@ video {
 .gap-6 {
   gap: 1.5rem;
 }
-.gap-10 {
-  gap: 2.5rem;
-}
 .rounded {
   border-radius: 0.25rem;
 }
@@ -768,6 +771,9 @@ video {
 }
 .rounded-md {
   border-radius: 0.375rem;
+}
+.rounded-xl {
+  border-radius: 0.75rem;
 }
 .border-b {
   border-bottom-width: 1px;
@@ -809,6 +815,10 @@ video {
 .px-16 {
   padding-left: 4rem;
   padding-right: 4rem;
+}
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
 }
 .px-4 {
   padding-left: 1rem;
@@ -879,17 +889,17 @@ video {
 .pb-24 {
   padding-bottom: 6rem;
 }
+.pb-32 {
+  padding-bottom: 8rem;
+}
 .pt-10 {
   padding-top: 2.5rem;
-}
-.pt-36 {
-  padding-top: 9rem;
 }
 .pt-14 {
   padding-top: 3.5rem;
 }
-.pb-32 {
-  padding-bottom: 8rem;
+.pt-36 {
+  padding-top: 9rem;
 }
 .text-center {
   text-align: center;
@@ -955,9 +965,6 @@ video {
 }
 .leading-6 {
   line-height: 1.5rem;
-}
-.leading-4 {
-  line-height: 1rem;
 }
 .tracking-wider {
   letter-spacing: 0.05em;
@@ -1063,7 +1070,8 @@ video {
 .faq_heading,
 .servicesWhatWeDo_heading,
 .singleService_heading,
-.aboutUs_page_heading {
+.aboutUs_page_heading,
+.ourCoumpany_page_heading {
   font-size: 60px;
   line-height: 72.61px;
 }
@@ -1339,7 +1347,8 @@ video {
   padding: 5px 10px;
 }
 
-.truestedIndustries_title {
+.truestedIndustries_title,
+.ourMission_card__itemHeading {
   font-size: 30px;
 }
 
@@ -1371,7 +1380,8 @@ video {
   font-size: 60px;
 }
 
-.aboutUs_hero__upperSection {
+.aboutUs_hero__upperSection,
+.ourCompany_hero__upperSection {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
