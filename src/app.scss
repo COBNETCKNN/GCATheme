@@ -492,3 +492,44 @@
     }
 
 }
+
+.blogPost_wrapper {
+    img {
+        border-radius: 20px;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transition: .1s ease-in-out;
+        transition: .1s ease-in-out;
+    }
+
+    img:hover {
+        -webkit-transform: scale(1.04);
+        transform: scale(1.04);
+    }
+}
+
+.blogPosts_article__heading:hover {
+    text-decoration: underline;
+}
+
+.singleBlogPost_content__wrapper {
+    h1, h2, h3, h4 {
+        font-weight: 700;
+        font-size: 30px;
+        margin: 0.5rem 0;
+    }
+
+    p {
+        font-weight: 300;
+        font-size: 18px;
+    }
+
+    a {
+        text-decoration: underline;
+        font-weight: 500 !important;
+    }
+
+    a:hover {
+        text-decoration: none;
+    }
+}

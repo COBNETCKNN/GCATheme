@@ -23,6 +23,8 @@ add_image_size('services-single-thumb', 1240, 650, true);
 add_image_size('page-hero-image', 1440, 350, true);
 add_image_size('flexible-image', 700, 335, true);
 add_image_size('flexible-block-image', 900, 350, true);
+add_image_size('single-post', 400, 290, true);
+
 
 // Registrating Menus
 require_once('partials/menu-registration.php');
