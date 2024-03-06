@@ -1,12 +1,9 @@
 <?php get_header(); ?>
 
-<button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-  Button
-</button>
-
-<h1 class="text-black font-inter font-bold text-2xl">Hello World</h1>
-
-<br>
-<h1 class="text-black font-halveticaBold font-bold text-2xl">Hello World</h1>
+<div id="blogArchive" class="py-14">
+  <div class="container mx-auto">
+    <h1 class="blogArchive_heading text-black font-inter font-semibold">GCA News</h1>
+  </div>
+</div>
 
 <?php get_footer(); ?>

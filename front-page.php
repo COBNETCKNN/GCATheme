@@ -43,7 +43,7 @@
                     
                     <h2 class="sectionHeading font-inter text-black font-normal mb-2"><?php echo $ourServicesHeading ?></h2>
                     <p class="sectionSubheading font-inter text-black text-lg font-light mb-6"><?php echo $ourServicesSubheading ?></p>
-                    <a type="button" class="bg-red py-2 px-5 font-inter font-light text-white text-lg rounded-md" href="<?php echo get_post_type_archive_link('service');?>"><?php echo $ourServicesButttonText; ?></a>
+                    <a type="button" class="bg-red py-2 px-5 font-inter font-light text-white text-lg rounded-md" href="<?php echo site_url('/our-services')?>"><?php echo $ourServicesButttonText; ?></a>
 
 
                     <?php endwhile; ?>

@@ -32,7 +32,7 @@ require_once('partials/post-types.php');
 
 // Disabling editor on certain pages
 function remove_pages_editor() {
-    $disabled_pages = array(17, 117, 9, 11, 208);
+    $disabled_pages = array(17, 117, 9, 11, 208, 13);
 
     $current_page_id = get_the_ID();
 

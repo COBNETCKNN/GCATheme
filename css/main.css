@@ -642,6 +642,9 @@ video {
 .h-\[300px\] {
   height: 300px;
 }
+.h-\[40vh\] {
+  height: 40vh;
+}
 .h-\[45vh\] {
   height: 45vh;
 }
@@ -760,9 +763,6 @@ video {
 .gap-6 {
   gap: 1.5rem;
 }
-.rounded {
-  border-radius: 0.25rem;
-}
 .rounded-2xl {
   border-radius: 1rem;
 }
@@ -775,16 +775,19 @@ video {
 .rounded-xl {
   border-radius: 0.75rem;
 }
+.border {
+  border-width: 1px;
+}
 .border-b {
   border-bottom-width: 1px;
+}
+.border-red {
+  --tw-border-opacity: 1;
+  border-color: rgb(217 59 88 / var(--tw-border-opacity));
 }
 .border-white {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
-}
-.bg-blue-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
 }
 .bg-darkBlue {
   --tw-bg-opacity: 1;
@@ -808,6 +811,9 @@ video {
 .p-3 {
   padding: 0.75rem;
 }
+.p-5 {
+  padding: 1.25rem;
+}
 .px-10 {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
@@ -819,10 +825,6 @@ video {
 .px-3 {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
-}
-.px-4 {
-  padding-left: 1rem;
-  padding-right: 1rem;
 }
 .px-5 {
   padding-left: 1.25rem;
@@ -1058,7 +1060,8 @@ video {
 .servicesContent_heading,
 .specialist_heading,
 .singleBenefits_heading,
-.contetnImage_heading {
+.contetnImage_heading,
+.contactPage_heading {
   font-size: 50px;
 }
 
@@ -1071,7 +1074,8 @@ video {
 .servicesWhatWeDo_heading,
 .singleService_heading,
 .aboutUs_page_heading,
-.ourCoumpany_page_heading {
+.ourCoumpany_page_heading,
+.blogArchive_heading {
   font-size: 60px;
   line-height: 72.61px;
 }
@@ -1335,6 +1339,7 @@ video {
   color: black;
   padding: 0 10px;
   font-weight: 400;
+  height: 32px;
 }
 .singelService_contact__form textarea {
   width: 100%;
@@ -1391,7 +1396,40 @@ video {
   border-radius: 20px;
 }
 
-.hover\:bg-blue-700:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(29 78 216 / var(--tw-bg-opacity));
+.contactPage_contact__form {
+  background-color: #414059;
+  max-width: 736px;
+  padding: 30px;
+  border-radius: 20px;
+}
+.contactPage_contact__form label {
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+}
+.contactPage_contact__form p {
+  color: white;
+  padding: 8px 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+.contactPage_contact__form input,
+.contactPage_contact__form select {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 10px;
+  color: black;
+  padding: 0 10px;
+  font-weight: 400;
+  height: 32px;
+}
+.contactPage_contact__form textarea {
+  width: 100%;
+  height: 32px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+.contactPage_contact__form .wpcf7-submit {
+  background-color: #D93B58;
+  padding: 5px 10px;
 }
