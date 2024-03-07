@@ -533,3 +533,45 @@
         text-decoration: none;
     }
 }
+
+.projectsCard_wrapper {
+    img {
+        border-radius: 20px;
+    }
+}
+
+.owl-prev {
+    height: 40px;
+    width: 40px;
+}
+
+.owl-prev::before {
+    content: url(../assets/icons/leftCarousel.svg);
+    transform: scale(0.6);
+  }
+
+.owl-prev span {
+    display: none;
+}
+
+
+.owl-next {
+    height: 40px;
+    width: 40px;
+    margin-left: 26px;
+
+    span {
+        display: none;
+    }
+}
+
+.owl-next::before {
+    content: url(../assets/icons/rightCarousel.svg);
+    transform: scale(0.6);
+  }
+
+.owl-nav {
+    display: flex;
+    justify-content: end;
+    margin-top: 1.5rem;
+}

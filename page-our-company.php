@@ -92,9 +92,7 @@
 <section id="news" class="bg-white py-24">
     <div class="container mx-auto">
         <h2 class="news_heading font-inter font-semibold">News</h2>
-        <div class="flex justify-center items-center">
-            <span class="font-inter font-semibold text-3xl text-center">*Here will go blog carousel <br> once the blog posts are added.*</span>
-        </div>
+        <?php get_template_part( 'partials/news', 'carousel' ) ?>
     </div>
 </section>
 

@@ -28,3 +28,38 @@
         });
     }
 //]]>
+
+jQuery(document).ready(function(jQuery){
+      
+    var owl = jQuery('.owl-carousel');
+    owl.owlCarousel({
+        nav:true,
+        loop: true,
+        responsive:{
+            0:{
+                items:2,
+                margin:50,
+            },
+            400:{
+                items:2,
+                margin:40,
+            },
+            600:{
+                items:3,
+                margin:40,
+            },            
+            960:{
+                items:3,
+                margin:20,
+            },
+            1200:{
+                items: 3,
+                margin:20,
+            },
+            1440: {
+                items: 3,
+                margin:20,
+            }
+        }
+    });
+});
