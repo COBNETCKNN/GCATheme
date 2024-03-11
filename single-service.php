@@ -2,12 +2,12 @@
 
 <!-- Single Service Hero Section -->
 <section id="singleServiceHero" class="h-fit w-full">
-    <div class="h-[60vh] w-full">
+    <div class="h-[40vh] lg:h-[60vh] w-full">
         <div class="singleService_hero__wrapper h-full w-full relative">
             <h1 class="singleService_heading text-center font-inter text-white z-10"><?php the_title(); ?></h1>
         </div>
     </div>
-    <div class="singleService_thumb__wrapper h-[60vh] w-full">
+    <div class="singleService_thumb__wrapper h-[25vh] lg:h-[60vh] w-full px-4 lg:px-0">
         <div class="flex justify-center">
             <?php the_post_thumbnail('services-single-thumb');  ?>
         </div>
@@ -15,7 +15,7 @@
 </section>
 
 <!-- Single Service Content Section -->
-<section id="singleServiceContent" class="pb-24">
+<section id="singleServiceContent" class="pb-14 lg:pb-24">
     <div class="container mx-auto">
         <div class="singleServiceContent_wrapper w-[80%] mx-auto">
         <?php if( have_rows('single_service_details') ): ?>
@@ -26,8 +26,8 @@
 
                 ?>
 
-                <h2 class="servicesContent_heading font-inter font-semibold text-black mb-5"><?php echo $singleServiceHeading; ?></h2>
-                <div class="font-inter font-light text-black text-lg leading-5"><?php echo $singleServiceDescription; ?></div>
+                <h2 class="text-center lg:text-left servicesContent_heading font-inter font-semibold text-black mb-5"><?php echo $singleServiceHeading; ?></h2>
+                <div class="text-center lg:text-left font-inter font-light text-black text-lg leading-6 lg:leading-5"><?php echo $singleServiceDescription; ?></div>
 
 
             <?php endwhile; ?>
@@ -37,7 +37,7 @@
 </section>
 
 <!-- Connect with A Specialist Banner -->
-<section id="specialistBanner" class="bg-red py-14">
+<section id="specialistBanner" class="bg-red py-10 lg:py-14">
     <div class="container mx-auto">
         <div class="specialist_wrapper">
             <h2 class="specialist_heading font-inter text-white text-center mb-5">Connect With A Specialist</h2>
@@ -49,7 +49,7 @@
                     ?>
 
                     <div class="flex justify-center">
-                        <a type="button" class="bg-darkBlue py-2 px-5 font-inter font-light text-white text-lg rounded-md" href="<?php echo site_url('/contact')?>"><?php echo $specialistButtonText; ?></a>
+                        <a type="button" class="bg-darkBlue py-2 px-5 font-inter font-light text-white text-md lg:text-lg rounded-md" href="<?php echo site_url('/contact')?>"><?php echo $specialistButtonText; ?></a>
                     </div>
 
                 <?php endwhile; ?>
@@ -59,13 +59,13 @@
 </section>
 
 <!-- Benefits of this Service Section -->
-<section id="singleBenefits" class="py-14">
+<section id="singleBenefits" class="py-2 lg:py-14">
     <div class="container mx-auto">
-    <h2 class="singleBenefits_heading font-inter text-black font-semibold py-14">Why <?php echo the_title(); ?>?</h2>
+    <h2 class="singleBenefits_heading text-center lg:text-left font-inter text-black font-semibold py-14">Why <?php echo the_title(); ?>?</h2>
     <?php if( have_rows('single_benefits_of_this_service') ): ?>
         <?php while( have_rows('single_benefits_of_this_service') ): the_row(); ?>
 
-        <div class="grid grid-cols-3 gap-4">
+        <div class="grid lg:grid-cols-3 gap-4 px-4 lg:px-0 pb-14 lg:pb-0">
             <?php
                 if( have_rows('single_benefits_repeater') ):
                     while( have_rows('single_benefits_repeater') ) : the_row();
@@ -89,9 +89,9 @@
 </section>
 
 <!-- Contact Section -->
-<section id="singleServiceContact" class="py-24 bg-red">
-    <div class="container mx-auto">
-        <div class="grid grid-cols-7 gap-14">
+<section id="singleServiceContact" class="py-14 lg:py-24 bg-red">
+    <div class="container mx-auto px-4 lg:px-0">
+        <div class="grid lg:grid-cols-7 gap-14">
         <?php if( have_rows('single_service_contact') ): ?>
             <?php while( have_rows('single_service_contact') ): the_row(); ?>
                 <?php if( have_rows('single_service_contact_informations') ): ?>
@@ -102,8 +102,8 @@
             
                     ?>
                     <!-- Contact Informations -->
-                    <div class="col-span-2 my-auto">
-                        <h2 class="sectionHeading font-inter text-white font-normal mb-8">Request For Quote</h2>
+                    <div class="lg:col-span-2 my-auto">
+                        <h2 class="singleService_contact__heading sectionHeading font-inter text-white font-normal mb-8 text-center lg:text-left">Request For Quote</h2>
                         <div class="contactCard bg-white rounded-3xl px-5 py-8">
                             <h3 class="font-inter font-bold text-xl text-black mb-3">Contact us:</h3>
                             <div class="contactCard_email mb-3">
@@ -119,7 +119,7 @@
                     <?php endwhile; ?>
                 <?php endif; ?>
                     <!-- Contact Form -->
-                    <div class="col-span-5 flex justify-end">
+                    <div class="lg:col-span-5 flex justify-end">
                         <div class="singelService_contact__form font-inter">
                             <?php $singleServiceContactFormShortcode = get_sub_field('single_service_shortcode_for_contact_form');?>
                             <?php echo do_shortcode($singleServiceContactFormShortcode); ?>

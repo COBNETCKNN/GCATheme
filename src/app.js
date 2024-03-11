@@ -7,7 +7,7 @@
         toggles[i].addEventListener("click", () => {
             if (parseInt(contentDiv[i].style.height) != contentDiv[i].scrollHeight) {
                 contentDiv[i].style.height = contentDiv[i].scrollHeight + "px";
-                toggles[i].style.color = "#0084e9";
+                toggles[i].style.color = "#D93B58";
                 icons[i].classList.remove("fa-plus");
                 icons[i].classList.add("fa-minus");
             } else {
@@ -61,5 +61,18 @@ jQuery(document).ready(function(jQuery){
                 margin:20,
             }
         }
+    });
+
+
+    // Mobile Header Menu
+    jQuery(".nav-toggler").click(function(){
+        jQuery("#navigation").toggle("slide");
+        jQuery('.navbar_grid__dropdown').addClass('open');
+        jQuery('body').css('overflow', 'hidden');
+    });
+
+    jQuery(".nav_close__button").click(function(){
+        jQuery('.navbar_grid__dropdown').removeClass('open');
+        jQuery('body').css('overflow', 'auto');
     });
 });

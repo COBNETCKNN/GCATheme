@@ -27,6 +27,10 @@
     src: url('../assets/fonts/HelveticaNeueThin.otf') format('truetype');
 }
 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 
 #menu-header-menu {
     display: flex;
@@ -52,7 +56,7 @@
 }
 
 .popup-form input {
-    width: 60%;
+    width: 100%;
     border: 2px solid #e9eaf1;
     background-color: #f5f7fa;
     color: #a3a3a3;
@@ -316,6 +320,11 @@
     }
 }
 
+.servicesCard {
+    border-radius: 20px;
+    background-size: cover;
+}
+
 .services_servicesCard {
     background-size: cover;
     border-radius: 20px;
@@ -574,4 +583,153 @@
     display: flex;
     justify-content: end;
     margin-top: 1.5rem;
+}
+
+#menu-footer-useful-links {
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+
+    li {
+        width: 50%;
+    }
+}
+
+
+// mobile view
+@media (max-width: 768px) {
+    #menu-header-menu-1 {
+        text-align: center;
+
+        li {
+            font-size: 28px;
+            font-weight: 500;
+            margin-bottom: 1.5rem;
+        }
+    }
+
+    .aboutUs_thumbnail__wrapper {
+        img {
+            border-radius: 20px;
+        }
+    }
+
+    .hero_wrapper {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+    .industries_card__heading {
+        font-size: 42px;
+        line-height: 42.09px;
+    }
+
+    .industries_card__paragraph {
+        font-size: 18px;
+    }
+
+    .industrySpecializationsCard {
+        border-radius: 0;
+    }
+
+    .industrySpecializationsCard::before {
+        border-radius: 0;
+    }
+
+    .sectionHeading {
+        font-size: 45px;
+    }
+
+    .aboutUs_heading,
+    .servicesPage_heading {
+        font-size: 45px;
+        line-height: 55.61px;
+    }
+
+    .aboutUs_paragraph {
+        font-size: 18px;
+    }
+
+    .heroHeading {
+        font-size: 45px;
+        line-height: 50px;
+    }
+    
+    .contactPage_contactForm {
+        position: relative;
+        top: -40%;
+        height: 90vh;
+    }
+
+    .contactForm_heading {
+        font-size: 30px;
+    }
+
+    .contactPage_contactForm p {
+        padding-bottom: 10px;
+    }
+
+    .aboutUs_heading {
+        font-size: 38px;
+    }
+
+    .faq_heading {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .wrapper {
+        padding: 10px 20px;
+    }
+
+    #menu-footer-menu {
+        justify-content: center;
+
+        li {
+            margin-right: 1rem;
+        }
+    }
+
+    .popup-form input {
+        width: 70%;
+        border: 2px solid #e9eaf1;
+        background-color: #f5f7fa;
+        color: #a3a3a3;
+        border-radius: 10px;
+    }
+
+    .toggle {
+        min-height: 125px;
+    }
+
+    .servicesContent_heading,
+    .servicesWhatWeDo_heading,
+    .servicesContent_heading,
+    .specialist_heading,
+    .singleBenefits_heading,
+    .singleService_contact__heading {
+        font-size: 30px;
+        line-height: 45px;
+    }
+
+    .serviceCard_title {
+        font-size: 22px;
+    }
+
+    .singleService_heading {
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%, 0);
+        margin-top: 7%;
+    }
+
+    .singelService_contact__form {
+        p, label {
+            font-size: 16px;
+        }
+
+    }
+
 }

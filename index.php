@@ -31,7 +31,7 @@
                   <a href="<?php the_permalink(); ?>">
                     <?php the_post_thumbnail('single-post'); ?>
                   </a>
-                  <div class="min-h-[130px] flex justify-center items-center">
+                  <div class="min-h-[130px] flex justify-center">
                     <h2 class="blogPosts_article__heading font-inter text-black font-medium text-2xl my-5"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
                   </div>
                   <div class="font-inter text-black font-light text-lg">
