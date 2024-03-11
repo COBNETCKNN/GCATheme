@@ -642,7 +642,8 @@ html, body {
     }
 
     .aboutUs_heading,
-    .servicesPage_heading {
+    .servicesPage_heading,
+    .aboutUs_page_heading {
         font-size: 45px;
         line-height: 55.61px;
     }
@@ -711,6 +712,11 @@ html, body {
     .singleService_contact__heading {
         font-size: 30px;
         line-height: 45px;
+    }
+
+    .contetnImage_heading {
+        font-size: 35px;
+        line-height: 50px;
     }
 
     .serviceCard_title {

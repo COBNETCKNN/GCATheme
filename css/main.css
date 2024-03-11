@@ -606,6 +606,9 @@ video {
 .-mt-\[15\%\] {
   margin-top: -15%;
 }
+.-mt-\[60\%\] {
+  margin-top: -60%;
+}
 .mb-1 {
   margin-bottom: 0.25rem;
 }
@@ -690,14 +693,14 @@ video {
 .h-\[25vh\] {
   height: 25vh;
 }
-.h-\[260px\] {
-  height: 260px;
-}
 .h-\[40vh\] {
   height: 40vh;
 }
 .h-\[45vh\] {
   height: 45vh;
+}
+.h-\[50vh\] {
+  height: 50vh;
 }
 .h-\[60vh\] {
   height: 60vh;
@@ -738,9 +741,6 @@ video {
 }
 .w-\[290px\] {
   width: 290px;
-}
-.w-\[400px\] {
-  width: 400px;
 }
 .w-\[80\%\] {
   width: 80%;
@@ -862,9 +862,6 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
-.p-10 {
-  padding: 2.5rem;
-}
 .p-3 {
   padding: 0.75rem;
 }
@@ -919,10 +916,6 @@ video {
   padding-top: 6rem;
   padding-bottom: 6rem;
 }
-.py-28 {
-  padding-top: 7rem;
-  padding-bottom: 7rem;
-}
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
@@ -950,9 +943,6 @@ video {
 }
 .pt-14 {
   padding-top: 3.5rem;
-}
-.pt-36 {
-  padding-top: 9rem;
 }
 .text-center {
   text-align: center;
@@ -1619,7 +1609,8 @@ html, body {
     font-size: 45px;
   }
   .aboutUs_heading,
-  .servicesPage_heading {
+  .servicesPage_heading,
+  .aboutUs_page_heading {
     font-size: 45px;
     line-height: 55.61px;
   }
@@ -1676,6 +1667,10 @@ html, body {
     font-size: 30px;
     line-height: 45px;
   }
+  .contetnImage_heading {
+    font-size: 35px;
+    line-height: 50px;
+  }
   .serviceCard_title {
     font-size: 22px;
   }
@@ -1727,6 +1722,10 @@ html, body {
     top: 2.5rem;
   }
 
+  .lg\:order-1 {
+    order: 1;
+  }
+
   .lg\:order-first {
     order: -9999;
   }
@@ -1754,6 +1753,10 @@ html, body {
     margin-bottom: 3.5rem;
   }
 
+  .lg\:-mt-\[15\%\] {
+    margin-top: -15%;
+  }
+
   .lg\:mb-0 {
     margin-bottom: 0px;
   }
@@ -1778,6 +1781,14 @@ html, body {
     display: none;
   }
 
+  .lg\:h-\[25vh\] {
+    height: 25vh;
+  }
+
+  .lg\:h-\[260px\] {
+    height: 260px;
+  }
+
   .lg\:h-\[300px\] {
     height: 300px;
   }
@@ -1792,6 +1803,14 @@ html, body {
 
   .lg\:h-\[84vh\] {
     height: 84vh;
+  }
+
+  .lg\:w-\[290px\] {
+    width: 290px;
+  }
+
+  .lg\:w-\[400px\] {
+    width: 400px;
   }
 
   .lg\:w-\[412px\] {
@@ -1838,8 +1857,16 @@ html, body {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
+  .lg\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
   .lg\:grid-cols-7 {
     grid-template-columns: repeat(7, minmax(0, 1fr));
+  }
+
+  .lg\:items-start {
+    align-items: flex-start;
   }
 
   .lg\:justify-start {
@@ -1852,6 +1879,10 @@ html, body {
 
   .lg\:rounded-2xl {
     border-radius: 1rem;
+  }
+
+  .lg\:p-10 {
+    padding: 2.5rem;
   }
 
   .lg\:px-0 {
@@ -1874,6 +1905,11 @@ html, body {
     padding-bottom: 3.5rem;
   }
 
+  .lg\:py-24 {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+
   .lg\:py-28 {
     padding-top: 7rem;
     padding-bottom: 7rem;
@@ -1887,11 +1923,6 @@ html, body {
   .lg\:py-64 {
     padding-top: 16rem;
     padding-bottom: 16rem;
-  }
-
-  .lg\:py-24 {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
   }
 
   .lg\:pb-0 {
@@ -1912,6 +1943,14 @@ html, body {
 
   .lg\:pt-36 {
     padding-top: 9rem;
+  }
+
+  .lg\:pb-32 {
+    padding-bottom: 8rem;
+  }
+
+  .lg\:pt-14 {
+    padding-top: 3.5rem;
   }
 
   .lg\:text-left {
