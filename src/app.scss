@@ -643,7 +643,9 @@ html, body {
 
     .aboutUs_heading,
     .servicesPage_heading,
-    .aboutUs_page_heading {
+    .aboutUs_page_heading,
+    .ourCoumpany_page_heading,
+    .contactPage_heading {
         font-size: 45px;
         line-height: 55.61px;
     }
@@ -671,7 +673,8 @@ html, body {
         padding-bottom: 10px;
     }
 
-    .aboutUs_heading {
+    .aboutUs_heading,
+    .blogArchive_heading {
         font-size: 38px;
     }
 
@@ -738,4 +741,138 @@ html, body {
 
     }
 
+    .contactPage_contact__form {
+        p, label {
+            font-size: 16px;
+        }
+    }
+
+    .custom-logo-link {
+        img {
+            scale: 0.84;
+        }
+    }
+
+    .contactPage_contactForm {
+        background-color: #D93B58;
+        max-width: 750px;
+        border-radius: 20px;
+        position: absolute;
+        top: -65% !important;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+
+}
+
+@media (max-width: 450px) {
+    .contactPage_contactForm {
+        background-color: #D93B58;
+        max-width: 750px;
+        border-radius: 20px;
+        position: absolute;
+        top: -45% !important;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .fontPage_contactForm__wrapper {
+        height: 60vh !important;
+    }
+}
+
+//tablet resolutions
+@media (min-width: 850px) and (max-width: 1023px) {
+    .contactPage_contactForm {
+        background-color: #D93B58;
+        max-width: 750px;
+        border-radius: 20px;
+        position: absolute;
+        top: -35% !important;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .fontPage_contactForm__wrapper {
+        height: 80vh !important;
+    }
+
+    #menu-footer-menu {
+        display: flex;
+        justify-content: center;
+
+        li {
+            margin-right: 20px;
+            margin-left: 20px;
+        }
+    }
+
+
+
+}
+
+@media (min-width: 768px) and (max-width: 849px) {
+    .contactPage_contactForm {
+        background-color: #D93B58;
+        max-width: 750px;
+        border-radius: 20px;
+        position: absolute;
+        top: -35% !important;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #menu-footer-menu {
+        display: flex;
+        justify-content: center;
+
+        li {
+            margin-right: 20px;
+            margin-left: 20px;
+        }
+    }
+
+    .aboutUs_content__wrapper {
+        margin-top: -50% !important;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1240px) {
+    .servicesCard {
+        width: 350px !important;
+    }
+
+    .contactPage_contactForm {
+        background-color: #D93B58;
+        max-width: 750px;
+        border-radius: 20px;
+        position: absolute;
+        top: -55% !important;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .toggle {
+        min-height: 140px;
+    }
+
+    .services_servicesCard {
+        width: 500px !important;
+    }
+
+    .truestedIndustriesWrapper {
+        width: 330px !important;
+    }
 }

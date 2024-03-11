@@ -109,7 +109,7 @@
 </section>
 
 <!-- Industry Specializations Section -->
-<section id="industrySpecializations" class="bg-white lg:pt-10 lg:pb-24">
+<section id="industrySpecializations" class="bg-white lg:pt-10 md:pb-14 lg:pb-24">
     <div class="container mx-auto relative rounded-2xl">
         <div class="industrySpecializationsCard h-[850px] lg:h-[600px] w-full">
             <div class="grid lg:grid-cols-2 absolute w-full h-full">
@@ -195,7 +195,7 @@
                 $aboutUsThumbnail = get_sub_field('homepage_about_us_thumbnail');
                 $aboutUsThumbnailSize = 'aboutus-thumbnail';
                 ?>
-                <div class="aboutUs_thumbnail__wrapper flex justify-end items-center px-4 lg:px-0 mt-3 lg:mt-0">
+                <div class="aboutUs_thumbnail__wrapper flex justify-center lg:justify-end items-center px-4 lg:px-0 mt-3 lg:mt-0">
                 <?php 
                     if( $aboutUsThumbnail ) {
                         echo wp_get_attachment_image( $aboutUsThumbnail, $aboutUsThumbnailSize );
@@ -239,7 +239,7 @@
     </div>
 
     <!-- Contact Form -->
-    <div class="flex justify-center h-[60vh] relative px-5 lg:px-0">
+    <div class="fontPage_contactForm__wrapper flex justify-center h-[50vh] lg:h-[70vh] xl:h-[60vh] relative px-5 lg:px-0">
         <div class="contactPage_contactForm text-white px-4 lg:px-16 py-5 lg:py-10">
             <h3 class="contactForm_heading text-center text-white font-halveticaBold mb-9">Request For Quote</h3>
             <?php echo do_shortcode($contactUsShortcode); ?>

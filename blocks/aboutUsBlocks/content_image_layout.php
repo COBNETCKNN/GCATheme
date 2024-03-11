@@ -22,7 +22,7 @@
         </div>
     </div>
     <!-- Image -->
-    <div class="contentImage_image__wrapper flex justify-end items-center px-4 lg:px-0">
+    <div class="contentImage_image__wrapper flex justify-center lg:justify-end items-center px-4 lg:px-0">
         <?php 
             $contentImageImage = get_sub_field('content_image_layout_image');
             $size = 'flexible-block-image';

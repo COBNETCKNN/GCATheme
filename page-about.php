@@ -7,7 +7,7 @@
     <div class="aboutUs_hero__upperSection h-[45vh] w-full" style="background-image: url('<?php echo $featured_img_url; ?>');">
     </div>
     <!-- Content -->
-    <div class="aboutUs_hero__content h-[50vh] lg:h-[25vh] w-full px-4 lg:px-0">
+    <div class="aboutUs_hero__content h-[50vh] sm:h-[30vh] md:h-[40vh] lg:h-[25vh] w-full px-4 lg:px-0">
         <div class="container mx-auto flex justify-center">
             <?php if( have_rows('about_page_content') ): ?>
                 <?php while( have_rows('about_page_content') ): the_row(); 
@@ -17,7 +17,7 @@
                 
                 ?>
 
-                <div class="aboutUs_content__wrapper bg-darkBlue w-[1000px] min-h-[350px] flex justify-center items-center px-5 lg:px-16 py-10 rounded-3xl -mt-[60%] lg:-mt-[15%]">
+                <div class="aboutUs_content__wrapper bg-darkBlue w-[1000px] min-h-[350px] flex justify-center items-center px-5 lg:px-16 py-10 rounded-3xl -mt-[50%] sm:-mt-[50%] md:-mt-[20%] lg:-mt-[15%]">
                     <div class="">
                         <h1 class="aboutUs_page_heading text-center font-halveticaMedium text-white font-medium mb-5"><?php echo $aboutUsHeading; ?></h1>
                         <div class="aboutUs_page_description text-center text-lg font-halveticaExtraLight tracking-wider leading-6 text-white font-light"><?php echo $aboutUsDescription; ?></div>
@@ -31,7 +31,7 @@
 </section>
 
 <!-- Our Services Section -->
-<section id="ourServices" class="py-14">
+<section id="ourServices" class="py-14 md:py-0 lg:py-14">
     <div class="container mx-auto">
         <div class="">
             <h2 class="text-black font-inter text-2xl font-medium text-center py-5">Our Core Services</h2>
@@ -46,7 +46,7 @@
 
                 $projectQuery = new WP_Query($args); ?>
 
-                <div class="grid lg:grid-cols-4 gap-6 px-4 lg:px-0">
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 px-4 lg:px-0">
                     <?php 
                     // The Loop
                     if ($projectQuery->have_posts()) :
@@ -56,7 +56,7 @@
                         $servicesThumbnailSize = 'post-thumbnails';
                         ?>
 
-                        <div class="aboutUs_serviceCard rounded-2xl h-[200px] lg:w-[290px] relative" style="background-image: url('<?php echo $servicesThumbnail; ?>')">
+                        <div class="aboutUs_serviceCard rounded-2xl h-[200px] lg:w-[250px] xl:w-[290px] relative" style="background-image: url('<?php echo $servicesThumbnail; ?>')">
                             <h3 class="serviceCard_title font-inter text-white font-light absolute bottom-3 left-5"><?php echo the_title(); ?></h3>
                             <a type="button" href="<?php the_permalink(); ?>" target="_blank" class="absolute bottom-4 right-5">
                                 <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -80,7 +80,7 @@
 </section>
 
 <!-- Content Section -->
-<section id="aboutUS_content" class="py-2 lg:py-24">
+<section id="aboutUS_content" class="py-2 md:py-14 lg:py-24">
     <div class="container mx-auto">
     <?php
         if( have_rows('about_page_content_blocks') ):

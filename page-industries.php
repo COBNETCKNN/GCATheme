@@ -44,14 +44,14 @@
     <div class="container mx-auto px-4 lg:px-0">
         <h2 class="servicesWhatWeDo_heading text-center font-inter text-black font-semibold">Trusted Across Industries</h2>
         <p class="font-inter font-light text-black text-lg leading-5 text-center">Including</p>
-        <div class="grid lg:grid-cols-3 gap-4 py-14">
+        <div class="grid lg:grid-cols-3 gap-4 py-5 lg:py-14">
         <?php if( have_rows('industries_trusted_industries') ): ?>
             <?php while( have_rows('industries_trusted_industries') ): the_row(); 
 
                 $truestedIndustry = get_sub_field('industry_name');
                 ?>
-                <div class="truestedIndustriesWrapper flex justify-center lg:justify-start items-center lg:items-start bg-red rounded-2xl h-[150px] lg:h-[260px] lg:w-[400px] p-5 lg:p-10">
-                    <h3 class="truestedIndustries_title text-center lg:text-left font-inter font-semibold text-white"><?php echo $truestedIndustry; ?></h3>
+                <div class="truestedIndustriesWrapper flex justify-center items-center bg-red rounded-2xl h-[150px] lg:h-[260px] lg:w-[400px] p-5 lg:p-10">
+                    <h3 class="truestedIndustries_title text-center font-inter font-semibold text-white"><?php echo $truestedIndustry; ?></h3>
                 </div>
                 
             <?php endwhile; ?>

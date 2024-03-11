@@ -1,6 +1,6 @@
 <div class="content_image_layout grid lg:grid-cols-2 gap-10 lg:py-14 pb-14 lg:pb-0">
     <!-- Image -->
-    <div class="contentImage_image__wrapper order-last lg:order-first flex justify-start items-center px-4 lg:px-0">
+    <div class="contentImage_image__wrapper order-last lg:order-first flex justify-center lg:justify-start items-center px-4 lg:px-0">
         <?php 
             $contentImageImage = get_sub_field('image_content_layout_image');
             $size = 'flexible-block-image';

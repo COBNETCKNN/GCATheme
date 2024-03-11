@@ -1,4 +1,4 @@
-<div class="content_image_layout grid grid-cols-2 gap-10 py-14">
+<div class="content_image_layout grid lg:grid-cols-2 gap-10 lg:py-14 pb-14 lg:pb-0">
     <!-- Content -->
     <div class="flex justify-start items-center">
         <div class="">

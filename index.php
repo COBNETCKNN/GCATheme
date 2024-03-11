@@ -4,14 +4,14 @@
 <section id="blogArchive_hero" class="py-14">
   <div class="container mx-auto border-b-2 border-black py-14">
     <div class="blogArchive_heading__wrapper">
-      <h1 class="blogArchive_heading text-black font-inter font-semibold ml-5">GCA News</h1>
+      <h1 class="text-center lg:text-left blogArchive_heading text-black font-inter font-semibold lg:ml-5">GCA News</h1>
   </div>
 </section>
 
 <!-- Blog posts Query -->
-<section id="blogPosts" class="py-14">
+<section id="blogPosts" class="py-5 lg:py-14">
   <div class="container mx-auto">
-      <div class="grid grid-cols-3 gap-6">
+      <div class="grid lg:grid-cols-3 gap-6 px-4 lg:px-0">
 
         <?php
           $args = array(
@@ -28,13 +28,13 @@
               ?>
               
               <div class="blogPost_wrapper mb-10">
-                  <a href="<?php the_permalink(); ?>">
+                  <a class="flex justify-center" href="<?php the_permalink(); ?>">
                     <?php the_post_thumbnail('single-post'); ?>
                   </a>
                   <div class="min-h-[130px] flex justify-center">
-                    <h2 class="blogPosts_article__heading font-inter text-black font-medium text-2xl my-5"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+                    <h2 class="text-center lg:text-left blogPosts_article__heading font-inter text-black font-medium text-2xl my-5"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
                   </div>
-                  <div class="font-inter text-black font-light text-lg">
+                  <div class="text-center lg:text-left font-inter text-black font-light text-lg">
                     <?php echo wp_trim_words(get_the_content(), 16); ?>
                   </div>
               </div>
