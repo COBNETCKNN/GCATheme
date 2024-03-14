@@ -5,9 +5,9 @@ module.exports = {
   theme: {
     container: {
       screens: {
-        sm: '450px',
+        sm: '640px',
         md: '850px',
-        lg: '1023px',
+        lg: '1025px',
         xl: '1240px',
         '2xl': '1240px'
       },

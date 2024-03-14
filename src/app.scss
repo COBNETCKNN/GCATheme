@@ -41,6 +41,17 @@ html, body {
     }
 }
 
+
+.blackOverlay {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0.4;
+}
+
 .popup-form {
     width: 100%;
     display: flex;
@@ -190,6 +201,7 @@ html, body {
     height: 100%;
     background-color: rgba(65, 64, 89, 0.9);
 }
+
 
 // Contact Form
 .contactPage_contactForm {
@@ -466,14 +478,14 @@ html, body {
     
     label {
         color: white;
-        font-size: 20px;
+        font-size: 16px;
         font-weight: 600;
     }
 
     p {
         color: white;
         padding: 8px 0;
-        font-size: 20px;
+        font-size: 16px;
         font-weight: 600;
     }
 
@@ -541,6 +553,15 @@ html, body {
     a:hover {
         text-decoration: none;
     }
+
+    ul {
+        margin-top: 5px;
+    }
+
+    li {
+        list-style: inside;
+        padding: 3px 0;
+    }
 }
 
 .projectsCard_wrapper {
@@ -592,6 +613,13 @@ html, body {
 
     li {
         width: 50%;
+    }
+}
+
+.nav-toggler {
+    svg {
+        width: 30px;
+        height: 30px;
     }
 }
 
@@ -670,7 +698,7 @@ html, body {
     }
 
     .contactPage_contactForm p {
-        padding-bottom: 10px;
+        padding-bottom: 5px;
     }
 
     .aboutUs_heading,
@@ -753,48 +781,33 @@ html, body {
         }
     }
 
-    .contactPage_contactForm {
-        background-color: #D93B58;
-        max-width: 750px;
-        border-radius: 20px;
-        position: absolute;
-        top: -65% !important;
-        left: 0;
-        right: 0;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
 
 
 }
 
 @media (max-width: 450px) {
     .contactPage_contactForm {
-        background-color: #D93B58;
-        max-width: 750px;
-        border-radius: 20px;
-        position: absolute;
-        top: -45% !important;
-        left: 0;
-        right: 0;
-        margin-left: auto;
-        margin-right: auto;
+        margin-top: -70%;
+        min-height: 700px;
     }
 
     .fontPage_contactForm__wrapper {
-        height: 60vh !important;
+        height: 42vh !important;
+    }
+
+    .aboutUs_heading {
+        line-height: 40px;
     }
 }
 
 //tablet resolutions
-@media (min-width: 850px) and (max-width: 1023px) {
+@media (min-width: 830px) and (max-width: 1023px) {
     .contactPage_contactForm {
         background-color: #D93B58;
         max-width: 750px;
         border-radius: 20px;
         position: absolute;
-        top: -35% !important;
+        top: -55% !important;
         left: 0;
         right: 0;
         margin-left: auto;
@@ -802,7 +815,7 @@ html, body {
     }
 
     .fontPage_contactForm__wrapper {
-        height: 80vh !important;
+        height: 70vh !important;
     }
 
     #menu-footer-menu {
@@ -815,6 +828,36 @@ html, body {
         }
     }
 
+    #menu-header-menu-1 {
+        text-align: center;
+    }
+
+    #menu-header-menu-1 li {
+        font-size: 28px;
+        font-weight: 500;
+        margin-bottom: 1.5rem;
+    }
+
+    .homepageContactContent_wrapper {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+
+    .aboutUs_heading {
+        font-size: 45px;
+        line-height: 50px;
+    }
+
+    .industries_card__paragraph,
+    .aboutUs_paragraph {
+        font-size: 1.125rem;
+    }
+
+
+    .faq_heading {
+        font-size: 40px;
+    }
 
 
 }
@@ -825,11 +868,15 @@ html, body {
         max-width: 750px;
         border-radius: 20px;
         position: absolute;
-        top: -35% !important;
+        top: -10% !important;
         left: 0;
         right: 0;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    .frontPage_bottomSpace {
+        height: 10vh;
     }
 
     #menu-footer-menu {
@@ -842,15 +889,44 @@ html, body {
         }
     }
 
-    .aboutUs_content__wrapper {
+    .aboutUs_content__wrapper,
+    .ourCompany_content__wrapper {
         margin-top: -50% !important;
     }
+
+    #menu-header-menu-1 {
+        text-align: center;
+    }
+
+    #menu-header-menu-1 li {
+        font-size: 28px;
+        font-weight: 500;
+        margin-bottom: 1.5rem;
+    }
+
+    .homepageContactContent_wrapper {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+
+    .aboutUs_heading {
+        font-size: 45px;
+        line-height: 50px;
+    }
+
+    .industries_card__paragraph,
+    .aboutUs_paragraph {
+        font-size: 1.125rem;
+    }
+
+    .industries_card__heading {
+        line-height: 45px;
+    }
+
 }
 
 @media (min-width: 1024px) and (max-width: 1240px) {
-    .servicesCard {
-        width: 350px !important;
-    }
 
     .contactPage_contactForm {
         background-color: #D93B58;
@@ -866,13 +942,58 @@ html, body {
 
     .toggle {
         min-height: 140px;
+        font-size: 1.3rem; 
     }
 
-    .services_servicesCard {
-        width: 500px !important;
+    .ourMission_card__itemHeading {
+        font-size: 25px !important;
     }
 
-    .truestedIndustriesWrapper {
-        width: 330px !important;
+    .industries_card__heading,
+    .aboutUs_heading,
+    .aboutUs_heading   {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .industries_card__paragraph,
+    .aboutUs_paragraph,
+    .sectionSubheading,
+    .aboutUs_paragraph  {
+        font-size: 1.225rem;
+        line-height: 30px;
+        font-weight: 300;
+    }
+
+    .aboutUs_preheading {
+        font-size: 18px;
+    }
+
+    .faq_heading {
+        font-size: 45px;
+    }
+
+    #menu-footer-menu li {
+        margin-right: 2rem;
+    }
+
+    .aboutUs_hero__upperSection {
+        height: 25vh;
+    }
+
+
+}
+
+@media (min-width: 1240px) and (max-width: 1280px) {
+    .contactPage_contactForm {
+        background-color: #D93B58;
+        max-width: 750px;
+        border-radius: 20px;
+        position: absolute;
+        top: -65% !important;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
     }
 }

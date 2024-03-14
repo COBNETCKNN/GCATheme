@@ -26,7 +26,7 @@
 				</div>
                 <!-- MENU ICON -->
                 <button class="nav-toggler" data-target="#navigation">
-                    <i class="text-2xl text-white fas fa-bars"></i>
+                    <svg width="800px" height="800px" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path fill="#fff" d="M32 96v64h448V96H32zm0 128v64h448v-64H32zm0 128v64h448v-64H32z"/></svg>
                 </button>
             </div>
         </div>
@@ -36,7 +36,7 @@
             <div class="header_dropdown bg-darkBlue flex justify-center items-center w-full h-screen">
                 <div class="">
                     <!-- CLOSE BUTTON -->
-                    <button class="nav_close__button nav-toggler close_button text-white text-4xl p-3 absolute top-2 right-2" data-target="#navigation">&#215;</button>
+                    <button class="nav_close__button nav-toggler close_button text-white text-5xl p-3 absolute top-2 right-2" data-target="#navigation">&#215;</button>
                     <!-- NAVIGATION -->
                     <div class="thentwrktheme_header__menuMobile text-white font-jost">
                         <?php 

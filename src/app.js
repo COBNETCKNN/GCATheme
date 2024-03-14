@@ -45,7 +45,7 @@ jQuery(document).ready(function(jQuery){
                 margin:40,
             },
             600:{
-                items:3,
+                items:2,
                 margin:40,
             },            
             960:{

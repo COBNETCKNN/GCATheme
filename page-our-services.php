@@ -5,11 +5,11 @@
     <div class="container mx-auto px-4 lg:px-0">
         <div class="grid lg:grid-cols-7 gap-4">
             <!-- Heading -->
-            <div class="lg:col-span-2">
-                <h1 class="text-center lg:text-start servicesPage_heading text-black font-inter font-semibold mt-20"><?php the_title(); ?></h1>
+            <div class="col-span-3 xl:col-span-2 flex justify-start items-center">
+                <h1 class="text-center lg:text-start servicesPage_heading text-black font-inter font-semibold"><?php the_title(); ?></h1>
             </div>
             <!-- Featured image -->
-            <div class="lg:col-span-5 flex justify-center items-center">
+            <div class="col-span-4 xl:col-span-5 flex justify-center items-center">
                 <div class="servicesFeatured_wrapper">
                     <?php the_post_thumbnail('services-featured'); ?>
                 </div>
@@ -64,7 +64,7 @@
                 $servicesThumbnailSize = 'services-type';
                 ?>
 
-                <div class="services_servicesCard h-[200px] lg:h-[300px] lg:w-[610px] relative" style="background-image: url('<?php echo $servicesThumbnail; ?>')">
+                <div class="services_servicesCard h-[200px] lg:h-[300px] w-auto xl:w-[610px] relative" style="background-image: url('<?php echo $servicesThumbnail; ?>')">
                     <h3 class="serviceCard_title font-inter text-white font-medium absolute top-5 lg:top-10 left-3 lg:left-7"><?php echo the_title(); ?></h3>
                     <a type="button" href="<?php the_permalink(); ?>" target="_blank" class="absolute bottom-4 lg:bottom-8 right-3 lg:right-10 flex items-center">
                     <span class="text-white font-inter text-2xl font-light mr-3">Explore</span>
@@ -73,6 +73,7 @@
                         <path d="M7.88536 18.4971L23.9535 18.4971L16.052 26.1334C15.7338 26.4516 15.7338 26.9289 16.052 27.2471C16.3702 27.5653 16.8475 27.5653 17.1657 27.2471L25.8626 18.8683C26.499 18.2319 26.499 17.2244 25.8626 16.588L17.1657 8.15617C17.0066 7.99708 16.7944 7.94405 16.6354 7.94405C16.4232 7.94405 16.2111 8.05011 15.999 8.2092C15.7338 8.52738 15.7869 9.05768 16.1051 9.32284L23.9535 16.9062L7.88536 16.9062C7.46112 16.9062 7.08991 17.2774 7.08991 17.7016C7.08991 18.1259 7.46112 18.4971 7.88536 18.4971Z" fill="white"/>
                     </svg>
                     </a>
+                    <a href="<?php the_permalink(); ?>" class="w-full h-full absolute top-0 right-0 z-50"></a>
                 </div>
 
             <?php 

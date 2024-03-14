@@ -7,7 +7,7 @@
     <div class="aboutUs_hero__upperSection h-[45vh] w-full" style="background-image: url('<?php echo $featured_img_url; ?>');">
     </div>
     <!-- Content -->
-    <div class="aboutUs_hero__content h-[50vh] sm:h-[30vh] md:h-[40vh] lg:h-[25vh] w-full px-4 lg:px-0">
+    <div class="aboutUs_hero__content w-full px-4 lg:px-0">
         <div class="container mx-auto flex justify-center">
             <?php if( have_rows('about_page_content') ): ?>
                 <?php while( have_rows('about_page_content') ): the_row(); 
@@ -17,7 +17,7 @@
                 
                 ?>
 
-                <div class="aboutUs_content__wrapper bg-darkBlue w-[1000px] min-h-[350px] flex justify-center items-center px-5 lg:px-16 py-10 rounded-3xl -mt-[50%] sm:-mt-[50%] md:-mt-[20%] lg:-mt-[15%]">
+                <div class="aboutUs_content__wrapper bg-darkBlue w-[1000px] min-h-[350px] flex justify-center items-center px-5 lg:px-16 py-10 rounded-3xl -mt-[50%] lg:-mt-[15%]">
                     <div class="">
                         <h1 class="aboutUs_page_heading text-center font-halveticaMedium text-white font-medium mb-5"><?php echo $aboutUsHeading; ?></h1>
                         <div class="aboutUs_page_description text-center text-lg font-halveticaExtraLight tracking-wider leading-6 text-white font-light"><?php echo $aboutUsDescription; ?></div>
@@ -96,7 +96,7 @@
 <!-- Frequently Asked Questions -->
 <section id="aboutUs_faq" class="lg:pt-14 lg:pb-32">
     <div class="container mx-auto">
-        <div class="faq_wrapper py-10 bg-darkGray lg:rounded-2xl">
+        <div class="faq_wrapper py-10 bg-darkGray md:rounded-2xl">
             <h2 class="faq_heading text-black font-halveticaBold text-center mb-14">Frequently Asked Questions</h2>
             <div class="boxaccordion">
                 <div class="containerwidth">

@@ -7,7 +7,7 @@
     <div class="ourCompany_hero__upperSection h-[45vh] w-full" style="background-image: url('<?php echo $featured_img_url; ?>');">
     </div>
     <!-- Content -->
-    <div class="ourCompany_hero__content h-[50vh] lg:h-[25vh] w-full px-4 lg:px-0">
+    <div class="ourCompany_hero__content h-[50vh] sm:h-[30vh] md:h-[40vh] lg:h-[25vh] w-full px-4 lg:px-0">
         <div class="container mx-auto flex justify-center">
             <?php if( have_rows('our_company_content') ): ?>
                 <?php while( have_rows('our_company_content') ): the_row(); 
@@ -17,7 +17,7 @@
                 
                 ?>
 
-                <div class="ourCompany_content__wrapper bg-darkBlue w-[1000px] min-h-[350px] flex justify-center items-center px-5 lg:px-16 py-10 rounded-3xl -mt-[60%] lg:-mt-[15%]">
+                <div class="ourCompany_content__wrapper bg-darkBlue w-[1000px] min-h-[350px] flex justify-center items-center px-5 lg:px-16 py-10 rounded-3xl -mt-[50%] sm:-mt-[50%] md:-mt-[20%] lg:-mt-[15%]">
                     <div class="">
                         <h1 class="ourCoumpany_page_heading text-center font-halveticaMedium text-white font-medium mb-5"><?php echo $aboutUsHeading; ?></h1>
                         <div class="ourCompany_page_description text-center text-lg font-halveticaExtraLight tracking-wider leading-6 text-white font-light"><?php echo $aboutUsDescription; ?></div>
@@ -34,7 +34,7 @@
 <section id="ourCompany_ourMission" class="py-14">
     <div class="container mx-auto">
         <h2 class="text-black font-inter text-2xl font-medium text-center py-5">Our Mission</h2>
-        <div class="grid lg:grid-cols-4 gap-5 px-4 lg:px-0">
+        <div class="grid md:grid-cols-2 lg:grid-cols-4  gap-5 px-4 lg:px-0">
             <?php if( have_rows('our_mission_repeater') ): ?>
                 <?php while( have_rows('our_mission_repeater') ): the_row(); 
                     
@@ -42,7 +42,7 @@
                 
                 ?>
 
-                <div class="ourMission_card lg:w-[290px] h-[130px] bg-darkBlue flex justify-center items-center px-3 rounded-xl">
+                <div class="ourMission_card lg:w-[250px] xl:w-[290px] h-[130px] bg-darkBlue flex justify-center items-center px-3 rounded-xl">
                     <h3 class="ourMission_card__itemHeading font-inter text-center text-white font-medium"><?php echo $ourMissionItem; ?></h3>
                 </div>
 

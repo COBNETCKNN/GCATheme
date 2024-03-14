@@ -49,7 +49,7 @@
                         </div>
                     </div>
                     <!-- Contact form -->
-                    <div class="lg:col-span-5 flex justify-end items-center">
+                    <div class="lg:col-span-5 flex justify-center lg:justify-end items-center">
                         <?php $contactPageFormShortcode = get_sub_field('contact_page_form_shortcode'); ?>
                         <div class="contactPage_contact__form font-inter">
                             <?php echo do_shortcode($contactPageFormShortcode); ?>
@@ -64,7 +64,7 @@
 <!-- Frequently Asked Question Section -->
 <section id="faq" class="py-0 pt-10 lg:pt-0 lg:py-20">
     <div class="container mx-auto">
-        <div class="faq_wrapper py-10 bg-darkGray lg:rounded-2xl">
+        <div class="faq_wrapper py-10 bg-darkGray md:rounded-2xl">
             <h2 class="faq_heading text-black font-halveticaBold text-center mb-14">Frequently Asked Questions</h2>
             <div class="boxaccordion">
                 <div class="containerwidth">
